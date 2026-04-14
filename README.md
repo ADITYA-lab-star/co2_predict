@@ -21,12 +21,13 @@ The model achieves an **85% prediction accuracy** through robust feature enginee
 ## 📂 Project Structure
 ```text
 co2_predict/
-├── data/                   # Raw and processed datasets
-├── notebooks/              # Jupyter notebooks for EDA and model training
-├── src/                    # Source code for data processing and model pipeline
-│   ├── preprocess.py       # Data cleaning and feature engineering scripts
-│   ├── train.py            # Model training and evaluation scripts
-├── requirements.txt        # Project dependencies
+├── templates/
+        ├── index.html
+        ├── result.html
+├── FuelConsumption.csv
+├── main.py
+├── train.py            # Model training and evaluation scripts
+├── model.pkl
 └── README.md               # Project documentation
 ````
 
