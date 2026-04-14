@@ -1,10 +1,5 @@
 # 🌍 CO2 Emission Predictor
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-
 ## 📌 Overview
 The **CO2 Emission Predictor** is an applied machine learning regression project designed to analyze historical environmental datasets and forecast future CO2 emissions. By tracking and predicting greenhouse gas emissions based on various indicators, this tool aims to provide actionable insights for organizations and policymakers to implement effective climate strategies.
 
@@ -24,7 +19,7 @@ The model achieves an **85% prediction accuracy** through robust feature enginee
 * **Environment:** Jupyter Notebook / VS Code
 
 ## 📂 Project Structure
-
+```text
 co2_predict/
 ├── data/                   # Raw and processed datasets
 ├── notebooks/              # Jupyter notebooks for EDA and model training
@@ -33,6 +28,7 @@ co2_predict/
 │   ├── train.py            # Model training and evaluation scripts
 ├── requirements.txt        # Project dependencies
 └── README.md               # Project documentation
+````
 
 ## ⚙️ Installation & Setup
 
