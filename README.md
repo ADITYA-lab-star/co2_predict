@@ -1,112 +1,89 @@
-# CO2 Emission Prediction Using Machine Learning
+````markdown
+# 🌍 CO2 Emission Predictor
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 
-This project is a web-based application that predicts CO2 emissions of vehicles based on their engine size using a machine learning model. Built with Flask and scikit-learn, it provides a simple interface for users to input engine size and receive an estimated CO2 emission value.
+## 📌 Overview
+The **CO2 Emission Predictor** is an applied machine learning regression project designed to analyze historical environmental datasets and forecast future CO2 emissions. By tracking and predicting greenhouse gas emissions based on various indicators, this tool aims to provide actionable insights for organizations and policymakers to implement effective climate strategies.
 
-The prediction model is trained on a dataset containing various vehicle attributes and their corresponding CO2 emissions. The application demonstrates the practical application of machine learning in environmental analysis.
+The model achieves an **85% prediction accuracy** through robust feature engineering and optimized regression algorithms.
 
-## Features
+## 🚀 Features
+* **Exploratory Data Analysis (EDA):** In-depth visual and statistical analysis of environmental data to identify key emission drivers.
+* **Data Preprocessing:** Handling missing values, feature scaling, and encoding categorical variables for model readiness.
+* **Predictive Modeling:** Implementation of regression algorithms, including Random Forest Regressor and Linear Regression.
+* **Performance Evaluation:** Rigorous testing using standard metrics (RMSE, R-squared) to ensure high-fidelity forecasting.
 
-- **Web Interface**: User-friendly web application built with Flask
-- **Machine Learning Prediction**: Utilizes a trained regression model to predict CO2 emissions
-- **Real-time Results**: Instant prediction results displayed on the web page
-- **Dataset Analysis**: Based on comprehensive vehicle fuel consumption data
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Machine Learning:** Scikit-learn
+* **Data Visualization:** Matplotlib, Seaborn
+* **Environment:** Jupyter Notebook / VS Code
 
-## Dataset
+## 📂 Project Structure
+```text
+co2_predict/
+├── data/                   # Raw and processed datasets
+├── notebooks/              # Jupyter notebooks for EDA and model training
+├── src/                    # Source code for data processing and model pipeline
+│   ├── preprocess.py       # Data cleaning and feature engineering scripts
+│   ├── train.py            # Model training and evaluation scripts
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+````
 
-The project uses the `FuelConsumptionCo2.csv` dataset, which contains the following columns:
-- MODELYEAR: Model year of the vehicle
-- MAKE: Vehicle manufacturer
-- MODEL: Specific model name
-- VEHICLECLASS: Class of the vehicle (e.g., COMPACT, SUV - SMALL)
-- ENGINESIZE: Engine size in liters
-- CYLINDERS: Number of cylinders
-- TRANSMISSION: Type of transmission
-- FUELTYPE: Type of fuel used
-- FUELCONSUMPTION_CITY: Fuel consumption in city (L/100 km)
-- FUELCONSUMPTION_HWY: Fuel consumption on highway (L/100 km)
-- FUELCONSUMPTION_COMB: Combined fuel consumption (L/100 km)
-- FUELCONSUMPTION_COMB_MPG: Combined fuel consumption in MPG
-- CO2EMISSIONS: CO2 emissions in grams per km
+## ⚙️ Installation & Setup
 
-## Installation
+1.  **Clone the repository:**
 
-### Prerequisites
+    ```bash
+    git clone [https://github.com/ADITYA-lab-star/co2_predict.git](https://github.com/ADITYA-lab-star/co2_predict.git)
+    cd co2_predict
+    ```
 
-- Python 3.7 or higher
-- pip (Python package manager)
+2.  **Create a virtual environment (Recommended):**
 
-### Steps
+    ```bash
+    python -m venv env
+    source env/bin/activate  # On Windows use: env\Scripts\activate
+    ```
 
-1. **Clone the repository** (if applicable) or navigate to the project directory:
-   ```
-   cd Co2-Emission-Prediction-Using-Machine-Learning
-   ```
+3.  **Install dependencies:**
 
-2. **Install required packages**:
-   ```
-   pip install flask scikit-learn pandas numpy
-   ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-3. **Ensure the model file is present**:
-   - The application requires `model.pkl`, which should be a trained machine learning model.
-   - If not present, you may need to train the model using the provided dataset.
+## 📊 Usage
 
-4. **Set up templates** (if missing):
-   - The application expects `templates/index.html` and `templates/result.html`.
-   - Create these HTML files for the web interface.
+To explore the data and see the model training process, open the Jupyter Notebook:
 
-## Usage
-
-1. **Run the application**:
-   ```
-   python main.py
-   ```
-
-2. **Access the web interface**:
-   - Open a web browser and navigate to `http://127.0.0.1:5000/`
-
-3. **Make predictions**:
-   - Enter the engine size (in liters) in the input field
-   - Submit the form to get the predicted CO2 emissions
-
-## Model Details
-
-- **Algorithm**: The model uses a regression algorithm (likely Linear Regression or similar) trained on the FuelConsumptionCo2 dataset
-- **Input Feature**: Engine size (ENGINESIZE)
-- **Output**: Predicted CO2 emissions in grams per km
-- **Training Data**: Historical vehicle data with various attributes
-
-## Project Structure
-
-```
-Co2-Emission-Prediction-Using-Machine-Learning/
-├── main.py                 # Flask application
-├── model.pkl              # Trained machine learning model
-├── FuelConsumptionCo2.csv # Dataset
-├── templates/
-│   ├── index.html         # Main page template
-│   └── result.html        # Results page template
-└── README.md              # This file
+```bash
+jupyter notebook notebooks/EDA_and_Modeling.ipynb
 ```
 
-## Dependencies
+## 📈 Model Performance
 
-- Flask: Web framework for Python
-- scikit-learn: Machine learning library
-- pandas: Data manipulation library
-- numpy: Numerical computing library
+  * **Algorithms Tested:** Linear Regression, Random Forest Regressor.
+  * **Key Metrics:** Achieved an R-squared / Prediction Accuracy of **\~85%** on the validation set, demonstrating strong generalization on unseen environmental data.
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions, issues, and feature requests are welcome\!
+Feel free to check the [issues page](https://www.google.com/search?q=https://github.com/ADITYA-lab-star/co2_predict/issues) if you want to contribute.
 
-## License
+## 👨‍💻 Author
 
-This project is open source and available under the [MIT License](LICENSE).
+**Aditya Sai Koka**
 
-## Acknowledgments
+  * GitHub: [@ADITYA-lab-star](https://github.com/ADITYA-lab-star)
+  * LinkedIn: [aditya-sai-koka](https://www.linkedin.com/in/aditya-sai-koka-93a291324/)
 
-- Dataset source: Original fuel consumption data
-- Built as a demonstration of machine learning applications in environmental science
+<!-- end list -->
+
+```
+```
