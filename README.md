@@ -1,4 +1,3 @@
-````markdown
 # 🌍 CO2 Emission Predictor
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
@@ -25,7 +24,7 @@ The model achieves an **85% prediction accuracy** through robust feature enginee
 * **Environment:** Jupyter Notebook / VS Code
 
 ## 📂 Project Structure
-```text
+
 co2_predict/
 ├── data/                   # Raw and processed datasets
 ├── notebooks/              # Jupyter notebooks for EDA and model training
@@ -34,7 +33,6 @@ co2_predict/
 │   ├── train.py            # Model training and evaluation scripts
 ├── requirements.txt        # Project dependencies
 └── README.md               # Project documentation
-````
 
 ## ⚙️ Installation & Setup
 
